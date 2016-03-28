@@ -7,11 +7,11 @@ public class TransformTest
 
 	void Start()
     {
-        string data = transform.CreateSaveString(false, true, true, true);
+        string data = transform.CreateSaveString(true, true, true, true);
         Debug.Log("Start Data = " + data);
 
         transform.ResetLocal();
-        transform.SetupFromSaveString(data, false, true, true, true);
+        transform.SetupFromSaveString(data, true, true, true, true);
         Debug.Log("Start Data = " + transform.CreateSaveString(false, true, true, true) );
 	}
 }

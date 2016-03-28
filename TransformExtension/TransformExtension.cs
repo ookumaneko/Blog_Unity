@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public static class TransformExtension
 {
+    // 区切りの文字列
     const string _SAVE_SEPARATOR = "_";
 
     public static string CreateSaveString(this Transform transform, bool isLocal, bool isSavePosition, bool isSaveRotation, bool isSaveScale)
